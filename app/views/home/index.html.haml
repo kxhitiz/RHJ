@@ -19,10 +19,15 @@
   .span9
     %h2
       Main content
-    = render :partial => @jokes
+    - cache "#{@jokes}" do
+      = render :partial => @jokes
   .span5
     %h3
       Secondary content
+      = link_to "home", root_path
+      
+:markdown
+  ** Kshitiz **
       
 :javascript
   if (navigator.geolocation) {

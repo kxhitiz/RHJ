@@ -8,3 +8,10 @@
 //= require jquery_ujs
 //= require rails.validations
 //= require_directory .
+
+$(function() {
+  $('.span5 a').click(function(event) {
+    event.preventDefault();
+    
+  });
+});
